@@ -8,3 +8,14 @@ Use uma condição if para verificar se o número está dentro do intervalo e ex
  
 Exemplo de saída: "O número está entre 1 e 100." ou "O número não está entre 1 e 100."
  */
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Digete um numero");
+        int num1 = int.Parse(Console.ReadLine());
+
+
+    }
+}
