@@ -1,21 +1,27 @@
-﻿/*
- Ex.02 Faixa de valor
-
-Objetivo: Familiarizar-se com a verificação de intervalos numéricos.
+﻿/*Ex.02 -Número Positivo ou Negativo
  
-Descrição: Crie um programa que verifique se um número inserido pelo usuário está dentro do intervalo de 1 a 100.
-Use uma condição if para verificar se o número está dentro do intervalo e exiba uma mensagem informando o resultado.
- 
-Exemplo de saída: "O número está entre 1 e 100." ou "O número não está entre 1 e 100."
- */
+Objetivo: Aprenda a trabalhar com várias condições. 
 
-internal class Program
+Descrição: Desenvolva um programa que solicite ao usuário um número. O programa deve determinar
+se o número é positivo, negativo ou zero, usando if, else if e else para todas as três possibilidades.
+Exiba a mensagem correspondente. 
+
+Exemplo de saída: "O número é positivo.", "O número é negativo." ou "O número é zero".
+   */
+
+
+Console.WriteLine("Digite um número: ");
+int num = int.Parse(Console.ReadLine());
+
+if (num > 0)
 {
-    private static void Main(string[] args)
-    {
-        Console.WriteLine("Digete um numero");
-        int num1 = int.Parse(Console.ReadLine());
-
-
-    }
+    Console.WriteLine("O número é positivo");
+}
+else if (num < 0)
+{
+    Console.WriteLine("O número é negativo");
+}
+ else
+{
+    Console.WriteLine("O número é zero");
 }

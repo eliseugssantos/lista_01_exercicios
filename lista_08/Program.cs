@@ -7,4 +7,11 @@ Descrição: Crie um programa que solicite a idade de uma pessoa e determine se 
 Exemplo de saída: "Você pode votar." ou "Você não pode votar."
    */
 Console.WriteLine("digite sua idade");
-int 
+int idade = int.Parse(Console.ReadLine());
+if (idade >= 16)
+{
+    Console.WriteLine("Você pode votar.");
+}
+else {
+    Console.WriteLine("Você não pode votar.");
+}

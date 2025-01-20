@@ -12,8 +12,13 @@ Exemplo de saída: "O número é par." ou "O número é ímpar".
 Console.WriteLine("Digite um numero");
 int num1 = int.Parse(Console.ReadLine());
 
-if ( impar = 3)
-    { 
+int resultado = num1 % 2;
 
+if (resultado == 0)
+{
+    Console.WriteLine("O Número digitado é par");
 }
-
+if (resultado >= 1)
+{
+    Console.WriteLine("O Número digitado é impar");
+}
